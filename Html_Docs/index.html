@@ -322,25 +322,26 @@
     <h1>Google Map</h1>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.7703441549!2d3.416362473825966!3d6.423546324319223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8accaf861521%3A0xc43253d1abc4ba1d!2s1227%20Bishop%20Oluwole%20St%2C%20Victoria%20Island%20106104%2C%20Lagos!5e0!3m2!1sen!2sng!4v1688504866037!5m2!1sen!2sng" width="200px" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     
-    <form action="/action_page.php" style="margin-top: 5%; width: 50%;">
-      <div class="mb-3 mt-3">
-        <label for="name" class="form-label">Full name:</label>
-        <input type="name" class="form-control" id="email" placeholder="Your Name" name="email">
-      </div>
-      <div class="mb-3 mt-3">
-        <label for="email" class="form-label">Email:</label>
-        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    <form method="POST" action="action_page.php" style="width: 50%;">
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
       </div>
       <div class="mb-3">
-        <label for="pwd" class="form-label">Phone Number:</label>
-        <input type="password" class="form-control" id="pwd" placeholder="Enter Phone number" name="pswd" style="margin-bottom: 2%;">
-        <label for="comment">Message:</label>
-        <textarea class="form-control" rows="5" id="comment" name="text" placeholder="">
-        </textarea>
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+      <div class="mb-3">
+        <label for="phone" class="form-label">Phone</label>
+        <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" required>
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" id="message" name="message" rows="3" placeholder="Enter your message" required></textarea>
       </div>
       <button type="submit" class="btn btn-primary">Submit</button>
-      </div>
     </form>
+    
     
     
 
