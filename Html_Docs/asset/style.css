@@ -1,6 +1,6 @@
 
 body {
-  padding: 20px;
+  padding: 0px;
   margin: 0px;
 }
 
@@ -94,7 +94,7 @@ body {
 }
 
 .dropdown-content a {
-  color: black;
+  color: green;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -444,5 +444,11 @@ marquee {
 footer {
   margin-top: 50%;
   padding: 50px;
+
+}
+.text-carousel {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+  position: absolute;
 
 }
